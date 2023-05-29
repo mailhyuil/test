@@ -34,4 +34,6 @@ jobs:
           npm run build
           touch ./hello.js && echo "console.log('hello')" >> ./hello.js
           node ./hello.js
+          whoami
+          ifconfig
           echo @@@@@@@@@@ 성공!! @@@@@@@@@@@
