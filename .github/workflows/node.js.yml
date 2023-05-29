@@ -32,5 +32,6 @@ jobs:
         run: |
           npm install
           npm run build
-          ssh root@localhost
+          touch ./hello.js && echo "console.log('hello')" >> ./hello.js
+          node ./hello.js
           echo @@@@@@@@@@ 성공!! @@@@@@@@@@@
